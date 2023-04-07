@@ -54,8 +54,8 @@ const ElementoMenu = (props) => {
             className={liClass}
             onClick={handleClick}
         >
-            <span><FontAwesomeIcon icon={icon} /></span> 
-            {label}
+            <span className="icona"><FontAwesomeIcon icon={icon} /></span> 
+            <span className="etichetta">{label}</span>
             {children && <ul>{children}</ul>}
         </li>
     )

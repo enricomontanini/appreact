@@ -4,6 +4,10 @@ import {useState} from 'react';
 
 import './App.css';
 import Sidebar from './components/Sidebar';
+import Dashboard from './views/Dashboard';
+import Classifica from './views/Classifica';
+import Calendario from './views/Calendario';
+import Squadre from './views/Squadre';
 
 function App() {
   const [open, setOpen] = useState(true);
@@ -23,9 +27,14 @@ function App() {
             icon={faBars} 
             size='xl'
             onClick={handleSidebarClick}
-          /> { open ? 'aperto' : 'chiuso'}
+          />
         </div>
-        <div id="corpo">corpo</div>
+        <div id="corpo">
+          <Dashboard />
+          <Classifica />
+          <Calendario />
+          <Squadre />
+        </div>
       </div>
     </div>
   );

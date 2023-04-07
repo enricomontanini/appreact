@@ -6,27 +6,31 @@ body {
 #app {
   display: flex;
   min-height: 100vh;
-  background-color: yellow;
 }
 
 
 #main {
-  background-color: aquamarine;
   flex-grow: 1;
 }
 
 #head {
   height: 50px;
-  background-color: coral;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  outline: 1px solid #bbbbbb;
+}
+
+#head svg.fa-bars {
+  cursor: pointer;
 }
 
 #corpo {
-  min-height: calc(100vh - 50px);
-  background-color: lightgreen;
-}
-
-div {
-  border: none !important;
+  min-height: calc(100vh - 50px - 2rem);
+  padding: 1rem;
+  background-color: #f0f0f0;
 }
 
 #logo {
