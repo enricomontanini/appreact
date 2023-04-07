@@ -8,6 +8,7 @@ import Dashboard from './views/Dashboard';
 import Classifica from './views/Classifica';
 import Calendario from './views/Calendario';
 import Squadre from './views/Squadre';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   const [open, setOpen] = useState(true);
@@ -30,10 +31,12 @@ function App() {
           />
         </div>
         <div id="corpo">
-          <Dashboard />
-          <Classifica />
-          <Calendario />
-          <Squadre />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="squadre" element={<Squadre />} />
+            <Route path="calendario" element={<Calendario />} />
+            <Route path="classifica" element={<Classifica />} />
+          </Routes>
         </div>
       </div>
     </div>
