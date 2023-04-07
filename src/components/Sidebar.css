@@ -1,0 +1,33 @@
+#sidebar {
+    width: 64px;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar.open {
+    width: 200px;
+}  
+
+ul ul li {
+    display: none;
+}
+
+ul li.active li {
+    display: block;
+}
+
+li.submenu {
+    cursor: pointer;
+}
+
+li.submenu li {
+    cursor: default;
+}
+
+li span {
+    width: 32px;
+    text-align: center;
+    display: inline-block;
+}

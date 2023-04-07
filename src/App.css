@@ -9,17 +9,10 @@ body {
   background-color: yellow;
 }
 
-#sidebar {
-  width: 200px;
-  height: 100vh;
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-}
 
 #main {
-  width: calc(100% - 200px);
   background-color: aquamarine;
+  flex-grow: 1;
 }
 
 #head {
@@ -62,10 +55,12 @@ div {
 
 #menu > ul > li {
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 #menu > ul > li > ul {
   font-weight: 300;
+  margin-bottom: 0;
 }
 
 
