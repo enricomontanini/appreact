@@ -50,5 +50,18 @@
         "vRosa": 200,
         "punti": 60
     }
-]
+    ],
+    
+    "punti": [
+        {"punti": 10, "time": 1672578751, "squadra": 1},
+        {"punti": 15, "time": 1673578751, "squadra": 1},
+        {"punti": 20, "time": 1674578751, "squadra": 1},
+        {"punti": 23, "time": 1675578751, "squadra": 1},
+        {"punti": 50, "time": 1676578751, "squadra": 1},
+        {"punti": 27, "time": 1677578751, "squadra": 1},
+        {"punti": 33, "time": 1678578751, "squadra": 1},
+        {"punti": 40, "time": 1679578751, "squadra": 2},
+        {"punti": 10, "time": 1680578751, "squadra": 2},
+        {"punti": 10, "time": 1681578751, "squadra": 3}
+      ]
 }
