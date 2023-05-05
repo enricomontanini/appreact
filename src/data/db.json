@@ -1,0 +1,54 @@
+{
+    "eventi": [
+        {
+            "id": 1,
+            "title": "primo evento",
+            "data": "2023-04-23"
+        }
+    ],
+    
+    "squadre": [
+    {
+        "id": 1,
+        "nome": "Inter",
+        "nGiocatori": 24,
+        "vRosa": 500,
+        "punti": 10
+    },
+    {
+        "id": 2,
+        "nome": "Milan",
+        "nGiocatori": 26,
+        "vRosa": 600,
+        "punti": 50
+    },
+    {
+        "id": 3,
+        "nome": "Roma",
+        "nGiocatori": 25,
+        "vRosa": 200,
+        "punti": 5
+    },
+    {
+        "id": 4,
+        "nome": "Udinese",
+        "nGiocatori": 24,
+        "vRosa": 500,
+        "punti": 100
+    },
+    {
+        "id": 5,
+        "nome": "Napoli",
+        "nGiocatori": 26,
+        "vRosa": 600,
+        "punti": 3
+    },
+    {
+        "id": 6,
+        "nome": "Lazio",
+        "nGiocatori": 25,
+        "vRosa": 200,
+        "punti": 60
+    }
+]
+}

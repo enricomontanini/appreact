@@ -3,11 +3,12 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #dadada;
+    background-color: white;
     color: #333;
     box-shadow: -4px 0 8px 8px #cacacaa0;
     z-index:10;
     outline: 1px solid #c9c9c9;
+    color: white;
 }
 
 #sidebar.open {

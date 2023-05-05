@@ -1,0 +1,5 @@
+@url=http://localhost:3009
+
+###
+
+GET http://localhost:3009/squadre

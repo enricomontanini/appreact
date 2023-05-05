@@ -1,4 +1,7 @@
-const dati = [
+import React, { useState, useEffect } from 'react'
+// import dati from '../data/squadre.json'
+
+/*const dati = [
     {
         nome: 'Squadra 1',
         nGiocatori: 24,
@@ -14,11 +17,24 @@ const dati = [
         nGiocatori: 25,
         vRosa: 200
     }
-];
+];*/
+
 
 const Squadre = () => {
+
+const [rows, setRows] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:3009/squadre')
+        .then(dati => dati.json())
+        .then(dati => {
+            setRows(dati)
+        })
+    }, [])
+
     return (
         <div>
+            <h1>Squadre</h1>
             <table className="table table-striped table-hover">
                 <thead>
                     <tr>
@@ -26,16 +42,22 @@ const Squadre = () => {
                         <th>Nome</th>
                         <th>N. Giocatori</th>
                         <th>V. Rosa</th>
+                        <th>Punti</th>
+                        
                     </tr>
                 </thead>
 
                 <tbody>
                     {
-                        dati.map(squadra => <tr>
+                        rows
+                        .sort((a, b) => a.nome - b.nome )
+                        .map(squadra => <tr>
                         <td><input type="checkbox" /></td>
                         <td>{squadra.nome}</td>
                         <td>{squadra.nGiocatori}</td>
                         <td>{squadra.vRosa}</td>
+                        <td>{squadra.punti}</td>
+                        
                     </tr>)
                     }
                     

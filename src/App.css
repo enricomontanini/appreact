@@ -20,11 +20,13 @@ body {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: white;
   outline: 1px solid #bbbbbb;
 }
 
 #head svg.fa-bars {
   cursor: pointer;
+  color: black;
 }
 
 #corpo {
